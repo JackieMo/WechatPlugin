@@ -21,8 +21,6 @@
 		E3940C63202E999B00EA128F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = E3940C62202E999B00EA128F /* fishhook.c */; };
 		E3940C65202E999B00EA128F /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C64202E999B00EA128F /* fishhook.h */; };
 		E3940C68202E999B00EA128F /* FuckWeChatDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3940C67202E999B00EA128F /* FuckWeChatDylib.mm */; };
-		E3940C6A202E999B00EA128F /* FuckWeChatDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C69202E999B00EA128F /* FuckWeChatDylib.h */; };
-		E3940C6C202E999B00EA128F /* FuckWeChatDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C6B202E999B00EA128F /* FuckWeChatDylib.m */; };
 		E3940C95202E9DAD00EA128F /* TKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C7A202E9DA900EA128F /* TKToast.m */; };
 		E3940C96202E9DAD00EA128F /* UIColor+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7B202E9DAA00EA128F /* UIColor+Extend.h */; };
 		E3940C97202E9DAD00EA128F /* EmoticonGameCheat.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7C202E9DAA00EA128F /* EmoticonGameCheat.h */; };
@@ -95,8 +93,6 @@
 		E3940C64202E999B00EA128F /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		E3940C66202E999B00EA128F /* FuckWeChatDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuckWeChatDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E3940C67202E999B00EA128F /* FuckWeChatDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuckWeChatDylib.mm; sourceTree = "<group>"; };
-		E3940C69202E999B00EA128F /* FuckWeChatDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuckWeChatDylib.h; sourceTree = "<group>"; };
-		E3940C6B202E999B00EA128F /* FuckWeChatDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuckWeChatDylib.m; sourceTree = "<group>"; };
 		E3940C7A202E9DA900EA128F /* TKToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKToast.m; sourceTree = "<group>"; };
 		E3940C7B202E9DAA00EA128F /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
 		E3940C7C202E9DAA00EA128F /* EmoticonGameCheat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmoticonGameCheat.h; sourceTree = "<group>"; };
@@ -201,8 +197,6 @@
 				E3940C79202E9D9F00EA128F /* Classes */,
 				E3940C66202E999B00EA128F /* FuckWeChatDylib.xm */,
 				E3940C67202E999B00EA128F /* FuckWeChatDylib.mm */,
-				E3940C69202E999B00EA128F /* FuckWeChatDylib.h */,
-				E3940C6B202E999B00EA128F /* FuckWeChatDylib.m */,
 				E3940C53202E999B00EA128F /* MethodTrace */,
 				E3940C5E202E999B00EA128F /* AntiAntiDebug */,
 				E3940C61202E999B00EA128F /* fishhook */,
@@ -297,7 +291,6 @@
 				E3940C99202E9DAD00EA128F /* zhFullView.h in Headers */,
 				E3940CA6202E9DAD00EA128F /* WeChatRobot.h in Headers */,
 				E3940CA4202E9DAD00EA128F /* TKMultiSelectContactsViewController.h in Headers */,
-				E3940C6A202E999B00EA128F /* FuckWeChatDylib.h in Headers */,
 				E3940CA2202E9DAD00EA128F /* zhPopupController.h in Headers */,
 				E3940CAC202E9DAD00EA128F /* TKToast.h in Headers */,
 				E3940CA1202E9DAD00EA128F /* TKChatRoomSensitiveViewController.h in Headers */,
@@ -460,7 +453,6 @@
 				E3940C9D202E9DAD00EA128F /* UIScreen+Extend.m in Sources */,
 				E3940CA8202E9DAD00EA128F /* TKMultiSelectContactsViewController.m in Sources */,
 				E3940CA7202E9DAD00EA128F /* EmoticonGameCheat.m in Sources */,
-				E3940C6C202E999B00EA128F /* FuckWeChatDylib.m in Sources */,
 				E3940C95202E9DAD00EA128F /* TKToast.m in Sources */,
 				E3940CA9202E9DAD00EA128F /* TKChatRoomSensitiveViewController.m in Sources */,
 				E3940C68202E999B00EA128F /* FuckWeChatDylib.mm in Sources */,
