@@ -20,26 +20,12 @@
 
 @implementation TKSettingViewController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // 增加对iPhone X的屏幕适配
-        CGRect winSize = [UIScreen mainScreen].bounds;
-        if (winSize.size.height == 812) { // iPhone X 高为812
-            winSize.size.height -= 88;
-            winSize.origin.y = 88;
-        }
-        _tableViewInfo = [[objc_getClass("MMTableViewInfo") alloc] initWithFrame:winSize style:UITableViewStyleGrouped];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self reloadTableData];
     [self initTitle];
-    MMTableView *tableView = [self.tableViewInfo getTableView];
-    [self.view addSubview:tableView];
+    [self setTableView];
+    [self reloadTableData];
 }
 
 - (void)initTitle {
@@ -56,6 +42,17 @@
 
     MMTableView *tableView = [self.tableViewInfo getTableView];
     [tableView reloadData];
+}
+
+- (void)setTableView {
+    _tableViewInfo = [[NSClassFromString(@"MMTableViewInfo") alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
+    [self.view addSubview:[_tableViewInfo getTableView]];
+    [_tableViewInfo setDelegate:self];
+    if (@available(iOS 11, *)) {
+        [_tableViewInfo getTableView].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
+    }else{
+        self.automaticallyAdjustsScrollViewInsets = YES;
+    }
 }
 
 #pragma mark - 设置 TableView

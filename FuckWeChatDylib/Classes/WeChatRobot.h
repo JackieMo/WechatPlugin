@@ -192,8 +192,11 @@ typedef NS_ENUM(NSUInteger, TKArrayTpye) {
 
 #pragma mark - MMTableView
 
+@interface MMTableView: UITableView
+@end
+
 @interface MMTableViewInfo
-- (id)getTableView;
+- (MMTableView *)getTableView;
 - (void)clearAllSection;
 - (void)addSection:(id)arg1;
 - (void)insertSection:(id)arg1 At:(unsigned int)arg2;
@@ -221,8 +224,7 @@ typedef NS_ENUM(NSUInteger, TKArrayTpye) {
 @property(retain, nonatomic) id userInfo;
 @end
 
-@interface MMTableView: UITableView
-@end
+
 
 #pragma mark - UI
 
