@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3940C3D202E999B00EA128F /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3940C3C202E999B00EA128F /* MethodTraceConfig.plist */; };
+		E3940C40202E999B00EA128F /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = E3940C3F202E999B00EA128F /* put ipa or app here */; };
+		E3940C48202E999B00EA128F /* libFuckWeChatDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3940C47202E999B00EA128F /* libFuckWeChatDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E3940C4D202E999B00EA128F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3940C4C202E999B00EA128F /* JavaScriptCore.framework */; };
+		E3940C4F202E999B00EA128F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3940C4E202E999B00EA128F /* Foundation.framework */; };
+		E3940C51202E999B00EA128F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3940C50202E999B00EA128F /* UIKit.framework */; };
+		E3940C55202E999B00EA128F /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C54202E999B00EA128F /* ANYMethodLog.h */; };
+		E3940C57202E999B00EA128F /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C56202E999B00EA128F /* ANYMethodLog.m */; };
+		E3940C59202E999B00EA128F /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C58202E999B00EA128F /* MethodTrace.h */; };
+		E3940C5B202E999B00EA128F /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C5A202E999B00EA128F /* MethodTrace.m */; };
+		E3940C60202E999B00EA128F /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C5F202E999B00EA128F /* AntiAntiDebug.m */; };
+		E3940C63202E999B00EA128F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = E3940C62202E999B00EA128F /* fishhook.c */; };
+		E3940C65202E999B00EA128F /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C64202E999B00EA128F /* fishhook.h */; };
+		E3940C68202E999B00EA128F /* FuckWeChatDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3940C67202E999B00EA128F /* FuckWeChatDylib.mm */; };
+		E3940C6A202E999B00EA128F /* FuckWeChatDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C69202E999B00EA128F /* FuckWeChatDylib.h */; };
+		E3940C6C202E999B00EA128F /* FuckWeChatDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C6B202E999B00EA128F /* FuckWeChatDylib.m */; };
+		E3940C95202E9DAD00EA128F /* TKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C7A202E9DA900EA128F /* TKToast.m */; };
+		E3940C96202E9DAD00EA128F /* UIColor+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7B202E9DAA00EA128F /* UIColor+Extend.h */; };
+		E3940C97202E9DAD00EA128F /* EmoticonGameCheat.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7C202E9DAA00EA128F /* EmoticonGameCheat.h */; };
+		E3940C98202E9DAD00EA128F /* TKEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7D202E9DAA00EA128F /* TKEditViewController.h */; };
+		E3940C99202E9DAD00EA128F /* zhFullView.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7E202E9DAA00EA128F /* zhFullView.h */; };
+		E3940C9A202E9DAD00EA128F /* TKRobotConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C7F202E9DAA00EA128F /* TKRobotConfig.h */; };
+		E3940C9B202E9DAD00EA128F /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C80202E9DAA00EA128F /* UIView+Layout.h */; };
+		E3940C9C202E9DAD00EA128F /* TKEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C81202E9DAA00EA128F /* TKEditViewController.m */; };
+		E3940C9D202E9DAD00EA128F /* UIScreen+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C82202E9DAA00EA128F /* UIScreen+Extend.m */; };
+		E3940C9E202E9DAD00EA128F /* zhFullView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C83202E9DAB00EA128F /* zhFullView.m */; };
+		E3940C9F202E9DAD00EA128F /* UIScreen+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C84202E9DAB00EA128F /* UIScreen+Extend.h */; };
+		E3940CA0202E9DAD00EA128F /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C85202E9DAB00EA128F /* UIColor+Extend.m */; };
+		E3940CA1202E9DAD00EA128F /* TKChatRoomSensitiveViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C86202E9DAB00EA128F /* TKChatRoomSensitiveViewController.h */; };
+		E3940CA2202E9DAD00EA128F /* zhPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C87202E9DAB00EA128F /* zhPopupController.h */; };
+		E3940CA3202E9DAD00EA128F /* zhIconLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C88202E9DAB00EA128F /* zhIconLabel.m */; };
+		E3940CA4202E9DAD00EA128F /* TKMultiSelectContactsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C89202E9DAB00EA128F /* TKMultiSelectContactsViewController.h */; };
+		E3940CA5202E9DAD00EA128F /* TKSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C8A202E9DAB00EA128F /* TKSettingViewController.h */; };
+		E3940CA6202E9DAD00EA128F /* WeChatRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C8B202E9DAC00EA128F /* WeChatRobot.h */; };
+		E3940CA7202E9DAD00EA128F /* EmoticonGameCheat.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C8C202E9DAC00EA128F /* EmoticonGameCheat.m */; };
+		E3940CA8202E9DAD00EA128F /* TKMultiSelectContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C8D202E9DAC00EA128F /* TKMultiSelectContactsViewController.m */; };
+		E3940CA9202E9DAD00EA128F /* TKChatRoomSensitiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C8E202E9DAC00EA128F /* TKChatRoomSensitiveViewController.m */; };
+		E3940CAA202E9DAD00EA128F /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C8F202E9DAC00EA128F /* UIView+Layout.m */; };
+		E3940CAB202E9DAD00EA128F /* zhPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C90202E9DAC00EA128F /* zhPopupController.m */; };
+		E3940CAC202E9DAD00EA128F /* TKToast.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C91202E9DAC00EA128F /* TKToast.h */; };
+		E3940CAD202E9DAD00EA128F /* zhIconLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E3940C92202E9DAC00EA128F /* zhIconLabel.h */; };
+		E3940CAE202E9DAD00EA128F /* TKRobotConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C93202E9DAD00EA128F /* TKRobotConfig.m */; };
+		E3940CAF202E9DAD00EA128F /* TKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940C94202E9DAD00EA128F /* TKSettingViewController.m */; };
+		E3940CB1202E9DB200EA128F /* popup_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3940CB0202E9DB200EA128F /* popup_close_btn.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3940C49202E999B00EA128F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3940C2E202E999B00EA128F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3940C46202E999B00EA128F;
+			remoteInfo = FuckWeChatDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3940C36202E999B00EA128F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E3940C48202E999B00EA128F /* libFuckWeChatDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E3940C39202E999B00EA128F /* FuckWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3940C3C202E999B00EA128F /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		E3940C3F202E999B00EA128F /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		E3940C41202E999B00EA128F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3940C47202E999B00EA128F /* libFuckWeChatDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFuckWeChatDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3940C4C202E999B00EA128F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E3940C4E202E999B00EA128F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E3940C50202E999B00EA128F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E3940C54202E999B00EA128F /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		E3940C56202E999B00EA128F /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		E3940C58202E999B00EA128F /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		E3940C5A202E999B00EA128F /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		E3940C5D202E999B00EA128F /* FuckWeChatDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckWeChatDylib-Prefix.pch"; sourceTree = "<group>"; };
+		E3940C5F202E999B00EA128F /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		E3940C62202E999B00EA128F /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		E3940C64202E999B00EA128F /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		E3940C66202E999B00EA128F /* FuckWeChatDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuckWeChatDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E3940C67202E999B00EA128F /* FuckWeChatDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuckWeChatDylib.mm; sourceTree = "<group>"; };
+		E3940C69202E999B00EA128F /* FuckWeChatDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuckWeChatDylib.h; sourceTree = "<group>"; };
+		E3940C6B202E999B00EA128F /* FuckWeChatDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuckWeChatDylib.m; sourceTree = "<group>"; };
+		E3940C7A202E9DA900EA128F /* TKToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKToast.m; sourceTree = "<group>"; };
+		E3940C7B202E9DAA00EA128F /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		E3940C7C202E9DAA00EA128F /* EmoticonGameCheat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmoticonGameCheat.h; sourceTree = "<group>"; };
+		E3940C7D202E9DAA00EA128F /* TKEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKEditViewController.h; sourceTree = "<group>"; };
+		E3940C7E202E9DAA00EA128F /* zhFullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhFullView.h; sourceTree = "<group>"; };
+		E3940C7F202E9DAA00EA128F /* TKRobotConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRobotConfig.h; sourceTree = "<group>"; };
+		E3940C80202E9DAA00EA128F /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		E3940C81202E9DAA00EA128F /* TKEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKEditViewController.m; sourceTree = "<group>"; };
+		E3940C82202E9DAA00EA128F /* UIScreen+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Extend.m"; sourceTree = "<group>"; };
+		E3940C83202E9DAB00EA128F /* zhFullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhFullView.m; sourceTree = "<group>"; };
+		E3940C84202E9DAB00EA128F /* UIScreen+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Extend.h"; sourceTree = "<group>"; };
+		E3940C85202E9DAB00EA128F /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		E3940C86202E9DAB00EA128F /* TKChatRoomSensitiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatRoomSensitiveViewController.h; sourceTree = "<group>"; };
+		E3940C87202E9DAB00EA128F /* zhPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhPopupController.h; sourceTree = "<group>"; };
+		E3940C88202E9DAB00EA128F /* zhIconLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhIconLabel.m; sourceTree = "<group>"; };
+		E3940C89202E9DAB00EA128F /* TKMultiSelectContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMultiSelectContactsViewController.h; sourceTree = "<group>"; };
+		E3940C8A202E9DAB00EA128F /* TKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSettingViewController.h; sourceTree = "<group>"; };
+		E3940C8B202E9DAC00EA128F /* WeChatRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRobot.h; sourceTree = "<group>"; };
+		E3940C8C202E9DAC00EA128F /* EmoticonGameCheat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmoticonGameCheat.m; sourceTree = "<group>"; };
+		E3940C8D202E9DAC00EA128F /* TKMultiSelectContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMultiSelectContactsViewController.m; sourceTree = "<group>"; };
+		E3940C8E202E9DAC00EA128F /* TKChatRoomSensitiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatRoomSensitiveViewController.m; sourceTree = "<group>"; };
+		E3940C8F202E9DAC00EA128F /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		E3940C90202E9DAC00EA128F /* zhPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhPopupController.m; sourceTree = "<group>"; };
+		E3940C91202E9DAC00EA128F /* TKToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKToast.h; sourceTree = "<group>"; };
+		E3940C92202E9DAC00EA128F /* zhIconLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhIconLabel.h; sourceTree = "<group>"; };
+		E3940C93202E9DAD00EA128F /* TKRobotConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRobotConfig.m; sourceTree = "<group>"; };
+		E3940C94202E9DAD00EA128F /* TKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSettingViewController.m; sourceTree = "<group>"; };
+		E3940CB0202E9DB200EA128F /* popup_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup_close_btn.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3940C33202E999B00EA128F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3940C44202E999B00EA128F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3940C4D202E999B00EA128F /* JavaScriptCore.framework in Frameworks */,
+				E3940C51202E999B00EA128F /* UIKit.framework in Frameworks */,
+				E3940C4F202E999B00EA128F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3940C2D202E999B00EA128F = {
+			isa = PBXGroup;
+			children = (
+				E3940C3B202E999B00EA128F /* FuckWeChat */,
+				E3940C52202E999B00EA128F /* FuckWeChatDylib */,
+				E3940C4B202E999B00EA128F /* Frameworks */,
+				E3940C3A202E999B00EA128F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3940C3A202E999B00EA128F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C39202E999B00EA128F /* FuckWeChat.app */,
+				E3940C47202E999B00EA128F /* libFuckWeChatDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3940C3B202E999B00EA128F /* FuckWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C3C202E999B00EA128F /* MethodTraceConfig.plist */,
+				E3940C41202E999B00EA128F /* Info.plist */,
+				E3940C3E202E999B00EA128F /* TargetApp */,
+			);
+			path = FuckWeChat;
+			sourceTree = "<group>";
+		};
+		E3940C3E202E999B00EA128F /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C3F202E999B00EA128F /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		E3940C4B202E999B00EA128F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C4C202E999B00EA128F /* JavaScriptCore.framework */,
+				E3940C4E202E999B00EA128F /* Foundation.framework */,
+				E3940C50202E999B00EA128F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3940C52202E999B00EA128F /* FuckWeChatDylib */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C79202E9D9F00EA128F /* Classes */,
+				E3940C66202E999B00EA128F /* FuckWeChatDylib.xm */,
+				E3940C67202E999B00EA128F /* FuckWeChatDylib.mm */,
+				E3940C69202E999B00EA128F /* FuckWeChatDylib.h */,
+				E3940C6B202E999B00EA128F /* FuckWeChatDylib.m */,
+				E3940C53202E999B00EA128F /* MethodTrace */,
+				E3940C5E202E999B00EA128F /* AntiAntiDebug */,
+				E3940C61202E999B00EA128F /* fishhook */,
+				E3940C5C202E999B00EA128F /* Supporting Files */,
+			);
+			path = FuckWeChatDylib;
+			sourceTree = "<group>";
+		};
+		E3940C53202E999B00EA128F /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C54202E999B00EA128F /* ANYMethodLog.h */,
+				E3940C56202E999B00EA128F /* ANYMethodLog.m */,
+				E3940C58202E999B00EA128F /* MethodTrace.h */,
+				E3940C5A202E999B00EA128F /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		E3940C5C202E999B00EA128F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C5D202E999B00EA128F /* FuckWeChatDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3940C5E202E999B00EA128F /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C5F202E999B00EA128F /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		E3940C61202E999B00EA128F /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				E3940C62202E999B00EA128F /* fishhook.c */,
+				E3940C64202E999B00EA128F /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		E3940C79202E9D9F00EA128F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3940CB0202E9DB200EA128F /* popup_close_btn.png */,
+				E3940C7C202E9DAA00EA128F /* EmoticonGameCheat.h */,
+				E3940C8C202E9DAC00EA128F /* EmoticonGameCheat.m */,
+				E3940C86202E9DAB00EA128F /* TKChatRoomSensitiveViewController.h */,
+				E3940C8E202E9DAC00EA128F /* TKChatRoomSensitiveViewController.m */,
+				E3940C7D202E9DAA00EA128F /* TKEditViewController.h */,
+				E3940C81202E9DAA00EA128F /* TKEditViewController.m */,
+				E3940C89202E9DAB00EA128F /* TKMultiSelectContactsViewController.h */,
+				E3940C8D202E9DAC00EA128F /* TKMultiSelectContactsViewController.m */,
+				E3940C7F202E9DAA00EA128F /* TKRobotConfig.h */,
+				E3940C93202E9DAD00EA128F /* TKRobotConfig.m */,
+				E3940C8A202E9DAB00EA128F /* TKSettingViewController.h */,
+				E3940C94202E9DAD00EA128F /* TKSettingViewController.m */,
+				E3940C91202E9DAC00EA128F /* TKToast.h */,
+				E3940C7A202E9DA900EA128F /* TKToast.m */,
+				E3940C7B202E9DAA00EA128F /* UIColor+Extend.h */,
+				E3940C85202E9DAB00EA128F /* UIColor+Extend.m */,
+				E3940C84202E9DAB00EA128F /* UIScreen+Extend.h */,
+				E3940C82202E9DAA00EA128F /* UIScreen+Extend.m */,
+				E3940C80202E9DAA00EA128F /* UIView+Layout.h */,
+				E3940C8F202E9DAC00EA128F /* UIView+Layout.m */,
+				E3940C8B202E9DAC00EA128F /* WeChatRobot.h */,
+				E3940C7E202E9DAA00EA128F /* zhFullView.h */,
+				E3940C83202E9DAB00EA128F /* zhFullView.m */,
+				E3940C92202E9DAC00EA128F /* zhIconLabel.h */,
+				E3940C88202E9DAB00EA128F /* zhIconLabel.m */,
+				E3940C87202E9DAB00EA128F /* zhPopupController.h */,
+				E3940C90202E9DAC00EA128F /* zhPopupController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E3940C45202E999B00EA128F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3940C9A202E9DAD00EA128F /* TKRobotConfig.h in Headers */,
+				E3940C96202E9DAD00EA128F /* UIColor+Extend.h in Headers */,
+				E3940CAD202E9DAD00EA128F /* zhIconLabel.h in Headers */,
+				E3940C98202E9DAD00EA128F /* TKEditViewController.h in Headers */,
+				E3940C9B202E9DAD00EA128F /* UIView+Layout.h in Headers */,
+				E3940C99202E9DAD00EA128F /* zhFullView.h in Headers */,
+				E3940CA6202E9DAD00EA128F /* WeChatRobot.h in Headers */,
+				E3940CA4202E9DAD00EA128F /* TKMultiSelectContactsViewController.h in Headers */,
+				E3940C6A202E999B00EA128F /* FuckWeChatDylib.h in Headers */,
+				E3940CA2202E9DAD00EA128F /* zhPopupController.h in Headers */,
+				E3940CAC202E9DAD00EA128F /* TKToast.h in Headers */,
+				E3940CA1202E9DAD00EA128F /* TKChatRoomSensitiveViewController.h in Headers */,
+				E3940C55202E999B00EA128F /* ANYMethodLog.h in Headers */,
+				E3940C59202E999B00EA128F /* MethodTrace.h in Headers */,
+				E3940C97202E9DAD00EA128F /* EmoticonGameCheat.h in Headers */,
+				E3940CA5202E9DAD00EA128F /* TKSettingViewController.h in Headers */,
+				E3940C9F202E9DAD00EA128F /* UIScreen+Extend.h in Headers */,
+				E3940C65202E999B00EA128F /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E3940C38202E999B00EA128F /* FuckWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3940C72202E999B00EA128F /* Build configuration list for PBXNativeTarget "FuckWeChat" */;
+			buildPhases = (
+				E3940C32202E999B00EA128F /* Sources */,
+				E3940C33202E999B00EA128F /* Frameworks */,
+				E3940C34202E999B00EA128F /* ShellScript */,
+				E3940C35202E999B00EA128F /* Resources */,
+				E3940C36202E999B00EA128F /* CopyFiles */,
+				E3940C37202E999B00EA128F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3940C4A202E999B00EA128F /* PBXTargetDependency */,
+			);
+			name = FuckWeChat;
+			productName = FuckWeChat;
+			productReference = E3940C39202E999B00EA128F /* FuckWeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3940C46202E999B00EA128F /* FuckWeChatDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3940C6F202E999B00EA128F /* Build configuration list for PBXNativeTarget "FuckWeChatDylib" */;
+			buildPhases = (
+				E3940C42202E999B00EA128F /* ShellScript */,
+				E3940C43202E999B00EA128F /* Sources */,
+				E3940C44202E999B00EA128F /* Frameworks */,
+				E3940C45202E999B00EA128F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuckWeChatDylib;
+			productName = FuckWeChatDylib;
+			productReference = E3940C47202E999B00EA128F /* libFuckWeChatDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3940C2E202E999B00EA128F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = mzj;
+				TargetAttributes = {
+					E3940C38202E999B00EA128F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E3940C46202E999B00EA128F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E3940C31202E999B00EA128F /* Build configuration list for PBXProject "FuckWeChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E3940C2D202E999B00EA128F;
+			productRefGroup = E3940C3A202E999B00EA128F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3940C38202E999B00EA128F /* FuckWeChat */,
+				E3940C46202E999B00EA128F /* FuckWeChatDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3940C35202E999B00EA128F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3940C40202E999B00EA128F /* put ipa or app here in Resources */,
+				E3940C3D202E999B00EA128F /* MethodTraceConfig.plist in Resources */,
+				E3940CB1202E9DB200EA128F /* popup_close_btn.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3940C34202E999B00EA128F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		E3940C37202E999B00EA128F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		E3940C42202E999B00EA128F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3940C32202E999B00EA128F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3940C43202E999B00EA128F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3940C60202E999B00EA128F /* AntiAntiDebug.m in Sources */,
+				E3940C9D202E9DAD00EA128F /* UIScreen+Extend.m in Sources */,
+				E3940CA8202E9DAD00EA128F /* TKMultiSelectContactsViewController.m in Sources */,
+				E3940CA7202E9DAD00EA128F /* EmoticonGameCheat.m in Sources */,
+				E3940C6C202E999B00EA128F /* FuckWeChatDylib.m in Sources */,
+				E3940C95202E9DAD00EA128F /* TKToast.m in Sources */,
+				E3940CA9202E9DAD00EA128F /* TKChatRoomSensitiveViewController.m in Sources */,
+				E3940C68202E999B00EA128F /* FuckWeChatDylib.mm in Sources */,
+				E3940C9E202E9DAD00EA128F /* zhFullView.m in Sources */,
+				E3940CAE202E9DAD00EA128F /* TKRobotConfig.m in Sources */,
+				E3940C5B202E999B00EA128F /* MethodTrace.m in Sources */,
+				E3940C9C202E9DAD00EA128F /* TKEditViewController.m in Sources */,
+				E3940CAB202E9DAD00EA128F /* zhPopupController.m in Sources */,
+				E3940C63202E999B00EA128F /* fishhook.c in Sources */,
+				E3940CAA202E9DAD00EA128F /* UIView+Layout.m in Sources */,
+				E3940C57202E999B00EA128F /* ANYMethodLog.m in Sources */,
+				E3940CA0202E9DAD00EA128F /* UIColor+Extend.m in Sources */,
+				E3940CAF202E9DAD00EA128F /* TKSettingViewController.m in Sources */,
+				E3940CA3202E9DAD00EA128F /* zhIconLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3940C4A202E999B00EA128F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3940C46202E999B00EA128F /* FuckWeChatDylib */;
+			targetProxy = E3940C49202E999B00EA128F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E3940C6D202E999B00EA128F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E3940C6E202E999B00EA128F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3940C70202E999B00EA128F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V87H9P7AB7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FuckWeChatDylib/FuckWeChatDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libFuckWeChatDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/FuckWeChatDylib",
+					"$(PROJECT_DIR)/FuckWeChatDylib/Classes",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"FuckWeChatDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		E3940C71202E999B00EA128F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = V87H9P7AB7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FuckWeChatDylib/FuckWeChatDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libFuckWeChatDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/FuckWeChatDylib",
+					"$(PROJECT_DIR)/FuckWeChatDylib/Classes",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"FuckWeChatDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3940C73202E999B00EA128F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V87H9P7AB7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = FuckWeChat/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdjz.mzj.FuckWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3940C74202E999B00EA128F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V87H9P7AB7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = FuckWeChat/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdjz.mzj.FuckWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3940C31202E999B00EA128F /* Build configuration list for PBXProject "FuckWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3940C6D202E999B00EA128F /* Debug */,
+				E3940C6E202E999B00EA128F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3940C6F202E999B00EA128F /* Build configuration list for PBXNativeTarget "FuckWeChatDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3940C70202E999B00EA128F /* Debug */,
+				E3940C71202E999B00EA128F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3940C72202E999B00EA128F /* Build configuration list for PBXNativeTarget "FuckWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3940C73202E999B00EA128F /* Debug */,
+				E3940C74202E999B00EA128F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3940C2E202E999B00EA128F /* Project object */;
+}
